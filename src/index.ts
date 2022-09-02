@@ -4,8 +4,6 @@ import { create } from './libs/create'
 
 const program = new Command()
 
-program.command('init').action(() => {
-  create()
-})
+program.command('create').action(() => create())
 
 program.parse()

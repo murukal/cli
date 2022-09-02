@@ -6,12 +6,16 @@
   "author": "murukal",
   "license": "ISC",
   "bin": {
-    "fantu": "./bin/index.ts"
+    "fantu": "./bin/index.js"
   },
   "scripts": {
     "build": "rm -rf bin && tsc"
   },
   "dependencies": {
-    "commander": "^9.4.0"
+    "commander": "^9.4.0",
+    "inquirer": "^9.1.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.1"
   }
 }
