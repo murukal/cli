@@ -8,6 +8,9 @@
   "bin": {
     "fantu": "./bin/index.ts"
   },
+  "scripts": {
+    "build": "rm -rf bin && tsc"
+  },
   "dependencies": {
     "commander": "^9.4.0"
   }
