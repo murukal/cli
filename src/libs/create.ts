@@ -1,20 +1,19 @@
+// third
 import inquirer from 'inquirer'
+// project
+import {
+  PROJECT_TEMPLATE_CHOICE,
+  TELEPORT_CHOICE,
+  PACKAGE_NAME_INPUT,
+  PACKAGE_DESCRIPTION_INPUT
+} from '../assets/create.js'
 
-export const create = () => {
-  inquirer
-    .prompt([
-      {
-        message: '1'
-      }
-    ])
-    .then((answers) => {
-      // Use user feedback for... whatever!!
-    })
-    .catch((error) => {
-      if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-      } else {
-        // Something else went wrong
-      }
-    })
+export const create = async () => {
+  const createOptions = await inquirer.prompt([
+    TELEPORT_CHOICE,
+    PROJECT_TEMPLATE_CHOICE,
+    PACKAGE_NAME_INPUT,
+    PACKAGE_DESCRIPTION_INPUT
+  ])
+  console.log('createOptions===', createOptions)
 }
