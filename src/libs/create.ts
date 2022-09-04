@@ -15,5 +15,6 @@ export const create = async () => {
     PACKAGE_NAME_INPUT,
     PACKAGE_DESCRIPTION_INPUT
   ])
+
   console.log('createOptions===', createOptions)
 }

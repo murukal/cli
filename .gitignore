@@ -1,2 +1,5 @@
-node_modules
-# bin
+# dependencies
+/node_modules
+
+# build
+/bin
