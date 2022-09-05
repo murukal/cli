@@ -42,22 +42,3 @@ export const PROJECT_TEMPLATE_CHOICE: ListQuestion<Pick<CreateOptions, 'teleport
     ]
   }
 }
-
-/**
- * package 名称
- */
-export const PACKAGE_NAME_INPUT: InputQuestion = {
-  type: 'input',
-  name: 'packageName',
-  message: 'package名称',
-  validate: (input: string) => /[(a-z)|/-]+/.test(input)
-}
-
-/**
- * package 描述
- */
-export const PACKAGE_DESCRIPTION_INPUT = {
-  type: 'input',
-  name: 'packageDescription',
-  message: 'package描述'
-}

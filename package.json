@@ -14,9 +14,11 @@
   "dependencies": {
     "commander": "^9.4.0",
     "inquirer": "^9.1.1",
-    "ora": "^6.1.2"
+    "ora": "^6.1.2",
+    "yeoman-environment": "^3.10.0"
   },
   "devDependencies": {
-    "@types/inquirer": "^9.0.1"
+    "@types/inquirer": "^9.0.1",
+    "@types/yeoman-environment": "^2.10.8"
   }
 }
