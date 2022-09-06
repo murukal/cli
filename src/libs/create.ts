@@ -11,11 +11,12 @@ export const create = async () => {
   // 创建yeoman运行时
   const env = yeoman.createEnv()
   // 运行时：下载以来
-  await env.installLocalGenerators({
+  const isInstalled = await env.installLocalGenerators({
     'generator-fantu': ''
   })
 
-  console.log('clis ===== ', await env.getGeneratorNames())
-
+  console.log('isInstalled====', isInstalled)
+  console.log('clis ===== ', env.getGeneratorNames())
+  console.log('res=====', env.run('fantu'))
   console.log('createOptions===', createOptions)
 }
