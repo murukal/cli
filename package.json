@@ -12,6 +12,7 @@
     "build": "rm -rf bin && tsc"
   },
   "dependencies": {
+    "chalk": "^5.0.1",
     "commander": "^9.4.0",
     "inquirer": "^9.1.1",
     "ora": "^6.1.2",
